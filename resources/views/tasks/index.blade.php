@@ -16,6 +16,7 @@
         <table class="min-w-full">
             <thead>
                 <tr class="bg-gray-50">
+                    <th class="px-6 py-3 text-left">ID</th>
                     <th class="px-6 py-3 text-left">Title</th>
                     <th class="px-6 py-3 text-left">Status</th>
                     <th class="px-6 py-3 text-left">Actions</th>
@@ -24,6 +25,7 @@
             <tbody>
                 @foreach($tasks as $task)
                     <tr class="border-t">
+                        <td class="px-6 py-4">{{ $task->id }}</td>
                         <td class="px-6 py-4">{{ $task->title }}</td>
                         <td class="px-6 py-4">
                             <span class="px-2 py-1 rounded text-sm
